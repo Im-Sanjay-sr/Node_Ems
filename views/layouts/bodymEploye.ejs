@@ -1,0 +1,91 @@
+<!-- frame contents..... -->
+
+
+<div class="list">
+    <div class="sidelist">
+        <div class="head">
+            <h5>Employee</h5>
+            <h5>Management</h5>
+        </div>
+        <div class="listboard">
+            <li><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
+            <li><i class="fa-solid fa-chart-simple"></i><a href="#">Employees</a></li>
+            <li><i class="fa-solid fa-user"></i><a href="#">My Profile</a></li>
+            <li><i class="fa-solid fa-lock"></i><form action="/employees/logout" method="post">
+                <button type="submit">Logout</button>
+               </form></li>
+            
+               
+        </div>
+        <div class="listpowered">
+            <span>Powered by</span>
+            <img src="/image/image 1.png" alt="">
+        </div>
+    </div>
+    <div class="mainlist">
+        <div class="listhead">
+            <div>
+                <p>Dashboard / Employees</p>
+                <h3>Employees</h3>
+            </div>
+            <div id="alerted" class="alert alert-info" role="alert">
+                A simple info alert—check it out!
+            </div>
+            <div class="search">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search" id="search" onkeyup="searchdetails()">
+                </div>
+                <i class="fa-regular fa-bell"></i>
+                <img src="/image/Avatar Style 6.png" alt="">
+            </div>
+        </div>
+
+
+
+         <!-- Table body -->
+         <%- include('./tableEmplye.ejs')  %> 
+
+
+
+        <div class="pages">
+            <span class="bg"><i class="fa-solid fa-chevron-left"></i></span>
+            <div id="pageno" class="pageno">
+
+            </div>
+            <span class="bg"><i class="fa-solid fa-chevron-right "></i></span>
+        </div>
+
+        <div class="footer">
+            <span>© 2023 All Rights Reserved. Stackup</span>
+            <div class=" d-flex gap-5">
+                <span>Terms of Use</span>
+                <span>Privacy Policy</span>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Add Employee Form start......-->
+
+
+
+
+<!-- End Add Employee Form -->
+
+
+
+<!-- delete form .......-->
+
+
+
+<!-- end -->
+
+
+
+<!-- overlay over background colour.... -->

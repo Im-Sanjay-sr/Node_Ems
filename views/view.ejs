@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600&family=Open+Sans:wght@300;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <div class="list" id="" >
+    <div class="sidelist">
+      <div class="head">
+        <h5>Employee</h5>
+        <h5>Management</h5>
+      </div>
+      <div class="listboard">
+        <li><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
+        <li><i class="fa-solid fa-chart-simple"></i><a href="#">Employees</a></li>
+        <li><i class="fa-solid fa-user"></i><a href="#">My Profile</a></li>
+        <li><i class="fa-solid fa-lock"></i><a href="#">Logout</a></li>
+      </div>
+      <div class="listpowered">
+        <span>Powered by</span>
+        <img src="/image/image 1.png" alt="">
+      </div>
+    </div>
+    <div class="mainlist">
+      <div class="listhead">
+        <div>
+          <p>Dashboard / Employees</p>
+          <h3>Employee Details</h3>
+        </div>
+        <div id="alerteded" class="alert alert-info" role="alert">
+          A simple info alert—check it out!
+        </div>
+        <div class="search">
+          <div class="searchbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search">
+          </div>
+          <i class="fa-regular fa-bell"></i>
+          <img src="/image/Avatar Style 6.png" alt="">
+        </div>
+      </div>
+
+      <!--  -->
+
+    
+  <div class="cointain-main" id="employeeview" >
+  
+  </div>
+
+
+
+      <!--  -->
+
+
+
+
+
+      <div class="footer">
+        <span>© 2023 All Rights Reserved. Stackup</span>
+        <div class=" d-flex gap-5">
+          <span>Terms of Use</span>
+          <span>Privacy Policy</span>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+ <!-- delete form .......-->
+
+
+ <%- include('./partials/delete.ejs')  %> 
+
+<!-- end -->
+
+
+<%- include('./layouts/addemployeForm')  %>
+
+
+<!-- overlay over background colour.... -->
+
+
+
+<div id="overlay">
+</div>
+<div id="overlays">
+</div>
+
+<!-- end -->
+
+
+<script src="/js/view.js">
+</script>
+</body>
+</html>

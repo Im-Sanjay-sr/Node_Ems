@@ -1,0 +1,16 @@
+<div id="deleteform" class="row center">
+    <div class="alerts alert-light" role="alert">
+        <div class="contents">
+            <h3>Delete Employee</h3>
+            <div>
+                <button class="close-btn btn btn-light"><i id="deleteclose" class="fa-solid fa-xmark"
+                        onclick="closeDeleteForm()"></i></button>
+            </div>
+        </div>
+        <h6>Are you sure you want to delete this employee?</h6>
+        <div class=" d-flex justify-content-end">
+            <button class="bts normal" onclick="closeDeleteForm()">Cancel</button>
+            <button id="dltUser" class="bts dark" onclick="deleteFormUser()">Delete</button>
+        </div>
+    </div>
+</div>

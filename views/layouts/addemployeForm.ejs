@@ -1,0 +1,182 @@
+ <!-- Add Employee Form start......-->
+
+
+
+ <div class="row main-row" id="formOpen">
+    <div class="col-12  bg-color full-width px-4 py-4 form-section">
+
+      <div class="form-head">
+        <h3 id="addChange">Add Employee</h3>
+
+        <button class="close-btn btn btn-light" onclick="closeForm()"><i id="formClose"
+            class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="submitform">
+      <!-- <form id="submitform"> -->
+
+<div class="uploadimage">
+      <label for="formFile" id="upload" class="custom-upload w-100 d-flex flex-column align-items-center justify-content-center">
+        <i class="fa-solid fa-upload"></i>
+
+
+        <h5>Upload Image</h5>
+        <p>PNG,JPG Files are allowed</p>
+      </label>
+      <label for="formFile" id="changebtn"> Change </label>
+  <input  class="form-control" type="file" id="formFile">
+
+</div>
+      
+
+
+        <div class="row gap-0">
+
+          <div class="col-4  d-flex flex-column gap-2 ">
+            <label for="exampleInputEmail1" class="form-label  required-field">Salutation</label>
+            <select class="form-select form-select-lg textcolr" aria-label="Default select example" id="SalutationForm" name="Salutation">
+              <option selected>Mr</option>
+              <option value="Ms">Ms</option>
+              <option value="Dr">Dr</option>
+              <option value="Prof">Prof</option>
+            </select>
+          </div>
+
+          <div class="col-4 d-flex flex-column gap-2 ">
+            <label for="firstname" class="form-label  required-field" >First Name</label>
+            <input id="nameForm" class="form-control form-control-lg textcolr" type="text" required placeholder="First Name"
+              aria-label=".form-control-lg example" name="firstname">
+          </div>
+
+          <div class="col-4  d-flex flex-column gap-2 ">
+            <label for="lastname" class="form-label  required-field">Last Name</label>
+            <input id="fullNameForm" class="form-control form-control-lg textcolr" type="text" placeholder="Last Name"
+              aria-label=".form-control-lg example" name="lastname">
+
+          </div>
+        </div>
+
+        <div class="row gap-0">
+          <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 ">
+            <label for="username" class="form-label  required-field">User Name</label>
+            <input id="usernameForm" type="text" class="form-control form-control-lg textcolr" placeholder="Userid"
+              aria-describedby="emailHelp"  name="username">
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 ">
+            <label for="password" class="form-label  required-field">Password</label>
+            <input id="PasswordForm" class="form-control form-control-lg textcolr" type="password"
+              placeholder="Choose a Password" aria-label=".form-control-lg example"  name="password">
+          </div>
+        </div>
+
+
+        <div class="row gap-0">
+          <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 ">
+
+            <label for="email" class="form-label  required-field">Email address</label>
+            <input id="emailForm" type="email" class="form-control form-control-lg textcolr" placeholder="example@gmail.com"
+              aria-describedby="emailHelp"  name="email">
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 ">
+            <label for="phone" class="form-label  required-field">Mobile Number</label>
+            <input id="phoneNoForm" class="form-control form-control-lg textcolr" type="number"
+              placeholder="Enter your 10 digit number" aria-label=".form-control-lg example"  name="phone">
+          </div>
+
+        </div>
+
+        <div class="row  align-items-center gap-0">
+          <div class="col-md-6 col-sm-12 d-flex flex-column gap-2">
+            <label for="dob" class="form-label  required-field">Date of Birth</label>
+            <input id="dobForm" class="form-control form-control-lg textcolr" type="date" placeholder=""
+              aria-label=".form-control-lg example" name="dob">
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 ">
+            <label for="gender" class="form-label  required-field ">Gender</label>
+            <div class="row justify-content-start gap-3">
+              <div class="form-check col-2 ms-3">
+
+                <input id="maleForm" class="form-check-input" type="radio" name="gender" id="male" value="Male"  name="gender">
+                <label class="form-check-label" for="male">
+                  male
+                </label>
+              </div>
+
+              <div class="form-check col-4 ms-3">
+                <input id="femaleForm" class="form-check-input" type="radio" name="gender" value="Female" name="gender">
+                <label class="form-check-label" for="female">
+                  Female
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row ">
+
+          <div class="col-6 d-flex flex-column gap-2">
+            <label for="address" class="form-label  required-field">Address</label>
+            <input id="addressForm" class="form-control form-control-lg textcolr" type="text" placeholder="Address"
+              aria-label=".form-control-lg example" name="address">
+          </div>
+          <div class="col-6 d-flex flex-column gap-2">
+            <label for="quolification" class="form-label  required-field">Quolification</label>
+            <input id="qulificationForm" class="form-control form-control-lg textcolr" type="text"
+              placeholder="Enter Your Quolification" aria-label=".form-control-lg example" name="quolification">
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-6  d-flex flex-column gap-2">
+            <label for="country" class="form-label  required-field">Country</label>
+            <select id="countryForm" class="form-select form-select-md textcolr" aria-label="Default select example"  name="country">
+              <option selected>select country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="new zealand">new zealand </option>
+            </select>
+
+          </div>
+          <div class="col-6  d-flex flex-column gap-2">
+            <label for="state" class="form-label  required-field">State</label>
+            <select id="stateForm" class="form-select form-select-md textcolr" aria-label="Default select example"  name="state">
+              <option selected>select state</option>
+              <option value="1">Kerala</option>
+              <option value="3">Mumbai</option>
+              <option value="2">Texas</option>
+              <option value="3">New York</option>
+              <option value="3">Alberta</option>
+              <option value="3">Auckland</option>
+              <option value="3">Wellington</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="row ">
+          <div class="col-6 d-flex flex-column gap-2">
+            <label for="city" class="form-label  required-field">City</label>
+            <input id="cityForm" class="form-control form-control-lg textcolr" type="text" placeholder="enter city"
+              aria-label=".form-control-lg example"  name="cityForm">
+
+          </div>
+          <div class="col-6 d-flex flex-column gap-2">
+            <label for="last-name" class="form-label  required-field">Pin/Zip</label>
+            <input id="pinForm" class="form-control form-control-lg textcolr" type="text" placeholder="enter zip/pin"
+              aria-label=".form-control-lg example"  name="pinForm">
+          </div>
+        </div>
+
+
+      
+
+      <div class=" d-flex justify-content-end">
+
+        <button class="btn btn-light p-3 me-2" onclick="closeForm()">cancel</button>
+        <button id="saveForm" type="submit" class="btn fill-btn py-3 px-4" onclick="addUser()">Add Employee </button>
+        <button id="editForm" type="submit" class="btn fill-btn py-3 px-4" onclick=" getEdit(),closeForm()">save Changes </button>
+      </div>
+    </form>
+    </div>
+  </div>
+  <!-- End Add Employee Form -->

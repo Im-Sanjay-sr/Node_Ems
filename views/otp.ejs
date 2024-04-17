@@ -1,0 +1,39 @@
+<%- include('./layouts/signheader'); %>
+
+
+  <div class="back">
+    <div class="containers">
+      <div class="form">
+        <form id="signotp" method="post" name="otpForm">
+          <div class="otp_container">
+            <h2>Verify your OTP</h2>
+            <div class="space" id="infield">
+              <input class="otp" type="number" maxlength="1" name="otp1">
+              <input class="otp" type="number" maxlength="1" name="otp2" >
+              <input class="otp" type="number" maxlength="1" name="otp3" >
+              <input class="otp" type="number" maxlength="1" name="otp4" >
+            </div>
+            <p class="count" id="otp_notifications">expires in <strong id="countoun"></strong></p>
+          </div>
+          <button type="submit" id="otp_ver">Verify</button>
+
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <%- include('./layouts/signfooter'); %>
