@@ -260,13 +260,7 @@ const hideMessage = () => {
 
 let pageno = document.getElementsByClassName("pagenos"); ///list number//
 
-// for(let index = 0 ;index < pageno.length; index++){
-//   pageno[index].addEventListener('click', () => {
-//   document.querySelector('.pagenoactive')?.classList.remove('pagenoactive')
-//   pageno[index].classList.add('pagenoactive');
 
-//   })
-// }
 
 //-------------------------------- PAGINATION...............................................
 
