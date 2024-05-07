@@ -1,4 +1,4 @@
-const employee = require("../models/employee")
+const employee = require("../models/employee");
 
 
 // .....add employee........
